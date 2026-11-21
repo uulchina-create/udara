@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prediksi Kualitas Udara Indonesia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header class="judul-bar">
+  <img src="New Patients.jpg" alt="Logo" class="logo-judul">
+  <div class="judul-teks">
+    <h1>PREDIKSI KUALITAS UDARA</h1>
+    <p>(𝚍𝚒𝚘𝚕𝚊𝚑 𝚍𝚎𝚗𝚐𝚊𝚗 html, css, javascript)</p>
+  </div>
+</header>
+
+  <main>
+    <section class="kontrol">
+      <label for="kota">Pilih kota</label>
+      <select id="kota"></select>
+      <button id="tombol">Tampilkan data</button>
+    </section>
+
+    <p id="status" role="status">Pilih kota lalu tekan.</p>
+    <section id="hasil" hidden>
+      <div class="kartu" id="kartuUtama">
+        <p class="label">Prediksi PM2.5 besok (Moving Average 3 hari)</p>
+        <p class="nilai"><span id="prediksi">-</span> <small>µg/m³</small></p>
+        <p id="kategori" class="badge">-</p>
+        <p id="tren"></p>
+      </div>
+
+      <h2>Prakiraan 5 hari</h2>
+      <table>
+        <thead>
+          <tr><th>Tanggal</th><th>PM2.5 (µg/m³)</th><th>Kategori</th></tr>
+        </thead>
+        <tbody id="tabel"></tbody>
+      </table>
+
+      <h2>Grafik PM2.5 harian</h2>
+      <div class="grafik-wrap">
+        <canvas id="grafik" role="img" aria-label="Grafik PM2.5 harian"></canvas>
+      </div>
+
+      <h2 id="judulSaran">Saran kesehatan</h2>
+      <div id="saran" class="saran"></div>
+
+      <p class="catatan">
+        catatan : Kategori dihitung dari konsentrasi PM2.5 dengan ambang ISPU (Ini pendekatan sederhana untuk belajar,
+        bukan sebagai nilai ISPU resmi.)
+      </p>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
