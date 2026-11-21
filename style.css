@@ -1,16 +1,28 @@
 :root {
-  --bg: #08111f;
+  --bg: #0b1e34;
   --teks: #e8f1ff;
   --muted: #8ea3bf;
   --garis: rgba(255, 255, 255, 0.14);
   --kartu: rgba(255, 255, 255, 0.06);
-  --aksen: #2fe0c8;
+  --aksen: #57ffe9;
   --aksen2: #4aa8ff;
   --baik: #2ee6a0;
   --sedang: #4aa8ff;
   --tidak-sehat: #ffc233;
   --sangat: #ff6a3d;
   --berbahaya: #ff3b5c;
+}
+
+.banner {
+  max-width: 10000px;
+}
+.banner img {
+  display: block;
+  width: 9%;
+  max-height: px;
+  object-fit: cover;
+  border-radius: 12px;
+
 }
 * { box-sizing: border-box; }
 body {
@@ -122,3 +134,26 @@ td .titik {
 .saran-kartu p { margin: 0; font-size: 0.95rem; color: #cfdcf0; }
 
 .catatan { margin-top: 2rem; font-size: 0.85rem; color: var(--muted); }
+
+.judul-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.25rem;
+}
+.logo-judul {
+  width: 100px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+.judul-teks {
+  text-align: left;
+} 
+.judul-teks h1 {
+  margin: 0;
+}
+.judul-teks p {
+  margin: 0.3rem 0 0;
+}
